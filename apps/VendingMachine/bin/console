@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../../../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+use VendingMachineCli\Command\AppInsertCoinCommand;
+
+
+
+$application = new Application();
+
+$application->add(new AppInsertCoinCommand());
+
+
+$application->run();
