@@ -1,0 +1,11 @@
+applications/*/var/*
+!applications/*/var/*/.gitkeep
+
+/phpunit.xml
+
+vendor/
+build/
+.idea/
+etc/infrastructure/data/products_stocks.json
+etc/infrastructure/data/inserted.json
+etc/infrastructure/data/cash_register.json

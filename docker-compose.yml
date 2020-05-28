@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  php:
+    container_name: kata-vending-machine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "9030:9001"
+    volumes:
+      - .:/app:delegated

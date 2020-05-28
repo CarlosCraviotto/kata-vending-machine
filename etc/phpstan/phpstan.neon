@@ -1,0 +1,12 @@
+parameters:
+    bootstrap: %currentWorkingDirectory%/vendor/autoload.php
+    reportUnmatchedIgnoredErrors: false
+    checkMissingIterableValueType: false
+    ignoreErrors:
+        - '#Ternary operator condition is always true.#'
+        - '#Strict comparison using === between.*#'
+        - '#Call to an undefined method .*::shouldReceive#'
+        - '#Call to an undefined method .*::shouldNotReceive#'
+        - '#.*was not matched in reported errors.#'
+        - '#.*has no typehint specified.#'
+        - '#.*PHPDoc tag @param has invalid value.#'
