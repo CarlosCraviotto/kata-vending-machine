@@ -7,11 +7,13 @@ use Symfony\Component\Console\Application;
 
 use VendingMachineCli\Command\AppInsertCoinCommand;
 
+use VendingMachineCli\Command\AppReturnCoinCommand;
 
 
 $application = new Application();
 
 $application->add(new AppInsertCoinCommand());
 
+$application->add(new AppReturnCoinCommand());
 
 $application->run();
