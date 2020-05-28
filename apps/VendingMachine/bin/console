@@ -6,16 +6,16 @@ require __DIR__ . '/../../../vendor/autoload.php';
 use Symfony\Component\Console\Application;
 
 use VendingMachineCli\Command\AppInsertCoinCommand;
-
 use VendingMachineCli\Command\AppReturnCoinCommand;
 use VendingMachineCli\Command\AppBuyProductCommand;
+use VendingMachineCli\Command\AppSetServiceCommand;
 
 
 $application = new Application();
 
 $application->add(new AppInsertCoinCommand());
-
 $application->add(new AppReturnCoinCommand());
 $application->add(new AppBuyProductCommand());
+$application->add(new AppSetServiceCommand());
 
 $application->run();
